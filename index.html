@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siphesihle Mkhatshwa - Portfolio</title>
+    <meta name="description" content="Portfolio of Siphesihle Mkhatshwa - Aspiring Software Engineer" />
+    <meta name="author" content="Siphesihle Mkhatshwa" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  </head>
+
+  <body>
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-logo">
+          <img src="pp.jpg" style="margin-right:10px;height:50px; border-radius: 50%;"><span>SM</span>
+        </div>
+        <button class="sidebar-toggle" id="sidebarToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+     <ul class="sidebar-menu">
+  <!-- <li><a href="#chatbot" class="sidebar-link"><i class="bi bi-robot"></i> Chatbot</a></li> -->
+  
+  <li><a href="#home" class="sidebar-link active"><i class="bi bi-house-door"></i> Home</a></li>
+  <li><a href="#about" class="sidebar-link"><i class="bi bi-person"></i> About</a></li>
+  <li><a href="#skills" class="sidebar-link"><i class="bi bi-lightning-charge"></i> Skills</a></li>
+  <li><a href="#projects" class="sidebar-link"><i class="bi bi-kanban"></i> Projects</a></li>
+  <li><a href="#resume" class="sidebar-link"><i class="bi bi-file-earmark-person"></i> Resume</a></li>
+  <li><a href="#contact" class="sidebar-link"><i class="bi bi-envelope"></i> Contact</a></li>
+</ul>
+
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+      <!-- Hero Section -->
+       <!-- Chatbot Section -->
+      <!-- <section id="chatbot" class="contact">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Chatbot</h2>
+          <div class="contact-info">
+              <h3>Ask Me Anything</h3>
+              <p>This chatbot can help you navigate my portfolio or answer simple questions.</p>
+            </div>
+          <div class="contact-content">
+            
+
+            <div class="contact-form animate-on-scroll" id="chatbot-box">
+              <div id="chat-window" style="width:900px;height: 300px; overflow-y: auto; background: var(--bg-secondary); padding: 1rem; border-radius: 10px; margin-bottom: 1rem; border: 1px solid var(--border-color);">
+                <div class="chat-message" style="margin-bottom: 1rem; color: var(--primary-color);">🤖 Hello! How can I help you today?</div>
+              </div>
+              <div style="display: flex; gap: 1rem;">
+                <input type="text" id="chat-input" placeholder="Type your message..." style="flex: 1; padding: 0.75rem; border-radius: 8px; border: 2px solid var(--border-color); background: var(--bg-secondary); color: #e2e8f0;">
+                <button class="btn btn-primary" onclick="sendMessage()">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+
+      <section id="home" class="hero">
+        <div class="hero-container">
+          <div class="hero-content">
+            <h1 class="hero-name animate-fade-in">Siphesihle Mkhatshwa</h1>
+            <h2 class="hero-title animate-fade-in-delay">Aspiring Software Engineer</h2>
+            <p class="hero-description animate-fade-in-delay-2">Final-year Computer Science student passionate about creating innovative solutions and building the future through code.</p>
+            <div class="hero-buttons animate-fade-in-delay-3">
+              <a href="#projects" class="btn btn-primary">View Projects</a>
+              <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+          </div>
+          <div class="hero-animation">
+            <div class="floating-code animate-float">
+              <span>&lt;code&gt;</span>
+              <span>function innovate() {</span>
+              <span>&nbsp;&nbsp;return creativity + passion;</span>
+              <span>}</span>
+              <span>&lt;/code&gt;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">About Me</h2>
+          <div class="about-content animate-on-scroll">
+            <div class="about-text">
+              <p>I'm a passionate final-year Computer Science student with a strong foundation in software development and a keen interest in creating innovative digital solutions. My journey in technology has equipped me with both theoretical knowledge and practical experience in modern programming languages and frameworks.</p>
+              
+              <div class="education">
+                <h3>Education</h3>
+                <div class="education-item">
+                  <h4>Bachelor of Computer Science</h4>
+                  <p>University Name: University of Johannesburg</p>
+                  <p>Relevant Coursework: Data Structures, Algorithms, Software Engineering, Database Systems, Web Development</p>
+                </div>
+              </div>
+            </div>
+            
+            
+          </div>
+        </div>
+      </section>
+
+
+    <section id="skills">
+  <div class="skills">
+    <h2 class="section-title animate-on-scroll">Technical Skills</h2>
+    <div class="skill-container">
+      <div class="skill-block">
+        <h4>Backend</h4>
+        <div class="skills-grid">
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">🟢</div>
+            <span>Node.js</span>
+          </div>
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">☕</div>
+            <span>Java</span>
+          </div>
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">#</div>
+            <span>C#</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <h4>Frontend</h4>
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">🌐</div>
+            <span>HTML/CSS</span>
+          </div>
+        <div class="skills-grid">
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">⚛️</div>
+            <span>React</span>
+          </div>
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">📱</div>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-block">
+        <h4>Database</h4>
+        <div class="skills-grid">
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">🗄️</div>
+            <span>SQL (Relational)</span>
+            
+          </div>
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">🗄️</div>
+            <span>MYSQL (workbench)</span>
+            
+          </div>
+          <div class="skill-item animate-skill">
+            <div class="skill-icon">🗄️</div>
+            <span>SQL Server Management Studio (Relational)</span>
+            
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-block">
+  <h4>Tools</h4>
+  <div class="skills-grid">
+    <div class="skill-item animate-skill">
+      <div class="skill-icon">🔧</div>
+      <span>Git</span>
+    </div>
+    <div class="skill-item animate-skill">
+      <div class="skill-icon">📮</div> <!-- Postman -->
+      <span>Postman</span>
+    </div>
+    <div class="skill-item animate-skill">
+      <div class="skill-icon">🎨</div> <!-- Figma -->
+      <span>Figma</span>
+    </div>
+    <div class="skill-item animate-skill">
+      <div class="skill-icon">📊</div> <!-- PowerPoint -->
+      <span>PowerPoint</span>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=250&fit=crop" alt="Web Application" />
+              </div>
+              <div class="project-content">
+                <h3>E-Commerce Web Application</h3>
+                <p>A full-stack e-commerce platform built with React and Node.js, featuring user authentication, shopping cart, and payment integration.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">React</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">GitHub</a>
+                  <a href="#" class="project-link">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=400&h=250&fit=crop" alt="Mobile App" />
+              </div>
+              <div class="project-content">
+                <h3>Task Management System</h3>
+                <p>A comprehensive task management application with real-time collaboration features, built using modern web technologies.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">Java</span>
+                  <span class="tech-tag">Spring Boot</span>
+                  <span class="tech-tag">MySQL</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">GitHub</a>
+                  <a href="#" class="project-link">Live Demo</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card animate-on-scroll">
+              <div class="project-image">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=250&fit=crop" alt="Data Analysis" />
+              </div>
+              <div class="project-content">
+                <h3>Data Analytics Dashboard</h3>
+                <p>An interactive dashboard for data visualization and analysis, helping businesses make data-driven decisions.</p>
+                <div class="project-tech">
+                  <span class="tech-tag">C#</span>
+                  <span class="tech-tag">.NET</span>
+                  <span class="tech-tag">SQL Server</span>
+                </div>
+                <div class="project-links">
+                  <a href="#" class="project-link">GitHub</a>
+                  <a href="#" class="project-link">Live Demo</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+     <section id="resume" class="resume">
+  <div class="container">
+    <h2 class="section-title animate-on-scroll">Resume</h2>
+    <div class="resume-content">
+      <p>Download my complete resume to learn more about my experience, education, and skills.</p>
+      <a href="files/SN_MKHATSHWA_CV.pdf" download class="btn btn-primary download-btn animate-on-scroll">
+        <span class="download-icon">📄</span>
+        Download CV
+      </a>
+    </div>
+  </div>
+</section>
+
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="certifications">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Certifications</h2>
+          <div class="certifications-grid">
+            <div class="cert-item animate-on-scroll">
+              <div class="cert-icon">🏆</div>
+              <h3>Java Programming</h3>
+              <p>Oracle Certified Associate</p>
+            </div>
+            <div class="cert-item animate-on-scroll">
+              <div class="cert-icon">🌐</div>
+              <h3>Web Development</h3>
+              <p>Full Stack Developer Certificate</p>
+            </div>
+            <div class="cert-item animate-on-scroll">
+              <div class="cert-icon">☁️</div>
+              <h3>Cloud Computing</h3>
+              <p>AWS Cloud Practitioner</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll">Get In Touch</h2>
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Let's Connect</h3>
+              <p>I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.</p>
+              <div class="social-links">
+                <a href="https://github.com/Siphesihle-Innovate" class="social-link" target="_blank">
+                  <span class="social-icon">🐙</span>
+                  GitHub
+                </a>
+                <a href="www.linkedin.com/in/siphesihle-mkhatshwa-40a1a42b6" class="social-link" target="_blank">
+                  <span class="social-icon">💼</span>
+                  LinkedIn
+                </a>
+              </div>
+            </div>
+            
+            <form class="contact-form animate-on-scroll" id="contactForm">
+              <div class="form-group">
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+              </div>
+              <div class="form-group">
+                <input type="email" id="email" name="email" placeholder="Your Email" required />
+              </div>
+              <div class="form-group">
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
